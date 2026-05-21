@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUNARA — Cảm Nhận Khách Hàng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;500;600&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/feedback.css" />
+</head>
+<body class="feedback-page">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-icon">☽</span>
+      <span class="nav__logo-text">LUNARA</span>
+    </div>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Trang Chủ</a>
+      <a href="feedback.html" class="nav__link active">Cảm Nhận</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- STARS BG -->
+  <div class="stars" id="stars"></div>
+  <div class="nebula nebula--1"></div>
+  <div class="nebula nebula--2"></div>
+
+  <!-- PAGE HEADER -->
+  <header class="fb-header">
+    <p class="hero__eyebrow">NHỮNG LỜI TỪ VŨ TRỤ</p>
+    <h1 class="fb-header__title">Cảm Nhận<br /><em>Khách Hàng</em></h1>
+    <p class="fb-header__sub">Hành trình của họ đã thay đổi — hãy để hành trình của bạn bắt đầu.</p>
+  </header>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="stat">
+      <span class="stat__number">10K+</span>
+      <span class="stat__label">Buổi Đọc Bài</span>
+    </div>
+    <div class="stat__divider">✦</div>
+    <div class="stat">
+      <span class="stat__number">4.9</span>
+      <span class="stat__label">Điểm Trung Bình</span>
+    </div>
+    <div class="stat__divider">✦</div>
+    <div class="stat">
+      <span class="stat__number">98%</span>
+      <span class="stat__label">Hài Lòng</span>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS GRID -->
+  <section class="testimonials">
+    <div class="testimonials__inner">
+
+      <article class="tcard tcard--large">
+        <div class="tcard__stars">★★★★★</div>
+        <blockquote class="tcard__quote">"Buổi trải bài với Lunara như mở ra một cánh cửa mà tôi chưa từng biết tồn tại. Mỗi lá bài như một mảnh gương phản chiếu lại chính mình một cách rõ ràng đến kỳ lạ."</blockquote>
+        <div class="tcard__author">
+          <img class="tcard__avatar" src="https://i.pravatar.cc/60?img=47" alt="Linh" />
+          <div>
+            <strong class="tcard__name">Phương Linh</strong>
+            <span class="tcard__role">Trải Bài Tình Yêu</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tcard">
+        <div class="tcard__stars">★★★★★</div>
+        <blockquote class="tcard__quote">"Tôi vốn hoài nghi, nhưng sau buổi đó tôi hiểu rằng tarot không phải bói toán — đó là ngôn ngữ của tâm hồn."</blockquote>
+        <div class="tcard__author">
+          <img class="tcard__avatar" src="https://i.pravatar.cc/60?img=33" alt="Minh" />
+          <div>
+            <strong class="tcard__name">Hoàng Minh</strong>
+            <span class="tcard__role">Trải Bài Sự Nghiệp</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tcard">
+        <div class="tcard__stars">★★★★★</div>
+        <blockquote class="tcard__quote">"Chính xác đến từng chi tiết nhỏ về những gì tôi đang trải qua. Cảm ơn Lunara đã giúp tôi tìm lại định hướng!"</blockquote>
+        <div class="tcard__author">
+          <img class="tcard__avatar" src="https://i.pravatar.cc/60?img=25" alt="Hà" />
+          <div>
+            <strong class="tcard__name">Thanh Hà</strong>
+            <span class="tcard__role">Trải Bài Tổng Quan</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tcard tcard--accent">
+        <div class="tcard__stars">★★★★★</div>
+        <blockquote class="tcard__quote">"Không gian buổi trải bài rất ấm áp và an toàn. Tôi cảm thấy được lắng nghe và thấu hiểu sâu sắc."</blockquote>
+        <div class="tcard__author">
+          <img class="tcard__avatar" src="https://i.pravatar.cc/60?img=12" alt="An" />
+          <div>
+            <strong class="tcard__name">Khánh An</strong>
+            <span class="tcard__role">Trải Bài Tình Yêu</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tcard">
+        <div class="tcard__stars">★★★★☆</div>
+        <blockquote class="tcard__quote">"Buổi đọc bài giúp tôi nhìn rõ những điều mình đang né tránh. Đôi khi sự thật cần một tấm gương để phản chiếu."</blockquote>
+        <div class="tcard__author">
+          <img class="tcard__avatar" src="https://i.pravatar.cc/60?img=58" alt="Dũng" />
+          <div>
+            <strong class="tcard__name">Tiến Dũng</strong>
+            <span class="tcard__role">Trải Bài Tổng Quan</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="tcard tcard--large tcard--right">
+        <div class="tcard__stars">★★★★★</div>
+        <blockquote class="tcard__quote">"Đặt lịch rất dễ dàng, nhận xác nhận nhanh chóng. Buổi trải bài vượt xa kỳ vọng của tôi — sẽ quay lại lần nữa chắc chắn!"</blockquote>
+        <div class="tcard__author">
+          <img class="tcard__avatar" src="https://i.pravatar.cc/60?img=38" alt="Trang" />
+          <div>
+            <strong class="tcard__name">Bảo Trang</strong>
+            <span class="tcard__role">Trải Bài Sự Nghiệp</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- LEAVE FEEDBACK FORM -->
+  <section class="leave-feedback">
+    <div class="leave-feedback__inner">
+      <p class="section-eyebrow">Chia Sẻ Hành Trình</p>
+      <h2 class="section-title">Để lại cảm nhận của bạn</h2>
+      <p class="leave-feedback__sub">Những lời chia sẻ của bạn truyền cảm hứng cho người khác bắt đầu hành trình.</p>
+
+      <form class="feedback-form" id="feedbackForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="fb_name">Họ & Tên</label>
+            <input class="form-input" type="text" id="fb_name" name="fb_name" placeholder="Nguyễn Văn A" required />
+            <span class="form-error" id="fbNameErr"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fb_service">Dịch Vụ Đã Dùng</label>
+            <select class="form-input form-select" id="fb_service" name="fb_service">
+              <option>Trải Bài Tổng Quan</option>
+              <option>Trải Bài Tình Yêu</option>
+              <option>Trải Bài Sự Nghiệp</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Đánh Giá</label>
+          <div class="star-rating" id="starRating" role="group" aria-label="Chọn số sao">
+            <button type="button" class="star-btn" data-v="1">★</button>
+            <button type="button" class="star-btn" data-v="2">★</button>
+            <button type="button" class="star-btn" data-v="3">★</button>
+            <button type="button" class="star-btn" data-v="4">★</button>
+            <button type="button" class="star-btn" data-v="5">★</button>
+          </div>
+          <input type="hidden" id="fb_rating" name="fb_rating" value="5" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="fb_message">Cảm Nhận Của Bạn</label>
+          <textarea class="form-input form-textarea form-textarea--lg" id="fb_message" name="fb_message" placeholder="Chia sẻ trải nghiệm của bạn..." required></textarea>
+          <span class="form-error" id="fbMsgErr"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full" id="fbSubmitBtn">
+          <span id="fbSubmitText">✦ Gửi Cảm Nhận</span>
+          <span id="fbLoading" style="display:none">Đang gửi...</span>
+        </button>
+      </form>
+
+      <div class="booking-success" id="fbSuccess" style="display:none">
+        <div class="success-icon">✦</div>
+        <h3 class="success-title">Cảm ơn bạn!</h3>
+        <p class="success-msg">Cảm nhận của bạn đã được gửi thành công. Ánh sáng từ câu chuyện của bạn sẽ soi đường cho người khác.</p>
+        <a href="index.html" class="btn btn--ghost">Về Trang Chủ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="cta-band__inner">
+      <p class="hero__eyebrow">SẴN SÀNG CHƯA?</p>
+      <h2 class="cta-band__title">Hành trình của bạn<br /><em>bắt đầu hôm nay.</em></h2>
+      <button class="btn btn--primary" id="ctaBook">✦ Đặt Lịch Ngay</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <span class="nav__logo-icon">☽</span>
+        <span>LUNARA</span>
+      </div>
+      <p class="footer__tagline">Ancient wisdom. Modern clarity.</p>
+      <div class="footer__links">
+        <a href="index.html">Trang Chủ</a>
+        <a href="feedback.html">Cảm Nhận</a>
+      </div>
+      <p class="footer__copy">© 2026 Lunara. Crafted with ✦ & starlight.</p>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL (shared) -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="closeModal" aria-label="Đóng">✕</button>
+      <div class="modal__header">
+        <span class="modal__icon">☽</span>
+        <h2 class="modal__title" id="modalTitle">Đặt Lịch Tarot</h2>
+        <p class="modal__sub">Điền thông tin để chúng tôi chuẩn bị hành trình của bạn</p>
+      </div>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="name">Họ & Tên</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+          <span class="form-error" id="nameErr"></span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Số Điện Thoại</label>
+          <input class="form-input" type="tel" id="phone" name="phone" placeholder="0901 234 567" required />
+          <span class="form-error" id="phoneErr"></span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="service">Dịch Vụ</label>
+          <select class="form-input form-select" id="service" name="service">
+            <option value="Trải Bài Tổng Quan">Trải Bài Tổng Quan</option>
+            <option value="Trải Bài Tình Yêu" selected>Trải Bài Tình Yêu</option>
+            <option value="Trải Bài Sự Nghiệp">Trải Bài Sự Nghiệp</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="date">Ngày Hẹn</label>
+          <input class="form-input" type="date" id="date" name="date" required />
+          <span class="form-error" id="dateErr"></span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="note">Câu Hỏi / Ghi Chú <span class="optional">(tuỳ chọn)</span></label>
+          <textarea class="form-input form-textarea" id="note" name="note" placeholder="Tôi muốn hỏi về..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+          <span id="submitText">✦ Xác Nhận Đặt Lịch</span>
+          <span id="submitLoading" style="display:none">Đang gửi...</span>
+        </button>
+      </form>
+      <div class="booking-success" id="bookingSuccess" style="display:none">
+        <div class="success-icon">✦</div>
+        <h3 class="success-title">Đặt lịch thành công!</h3>
+        <p class="success-msg">Chúng tôi sẽ liên hệ xác nhận trong thời gian sớm nhất.</p>
+        <button class="btn btn--ghost" id="closeSuccess">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>

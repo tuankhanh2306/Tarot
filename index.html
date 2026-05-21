@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUNARA — Your Journey. Revealed.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;500;600&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-icon">☽</span>
+      <span class="nav__logo-text">LUNARA</span>
+    </div>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link active">Trang Chủ</a>
+      <a href="feedback.html" class="nav__link">Cảm Nhận</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <!-- Animated stars -->
+    <div class="stars" id="stars"></div>
+    <!-- Nebula layers -->
+    <div class="nebula nebula--1"></div>
+    <div class="nebula nebula--2"></div>
+    <div class="nebula nebula--3"></div>
+
+    <!-- Floating tarot cards -->
+    <div class="cards-field" id="cardsField">
+      <div class="card card--1" data-label="THE STAR">
+        <div class="card__inner">
+          <div class="card__roman">XVII</div>
+          <div class="card__art">⭐</div>
+          <div class="card__name">THE STAR</div>
+        </div>
+      </div>
+      <div class="card card--2" data-label="THE MOON">
+        <div class="card__inner">
+          <div class="card__roman">XVIII</div>
+          <div class="card__art">🌙</div>
+          <div class="card__name">THE MOON</div>
+        </div>
+      </div>
+      <div class="card card--3" data-label="THE SUN">
+        <div class="card__inner">
+          <div class="card__roman">XIX</div>
+          <div class="card__art">☀️</div>
+          <div class="card__name">THE SUN</div>
+        </div>
+      </div>
+      <div class="card card--4" data-label="THE WORLD">
+        <div class="card__inner">
+          <div class="card__roman">XXI</div>
+          <div class="card__art">🌍</div>
+          <div class="card__name">THE WORLD</div>
+        </div>
+      </div>
+      <div class="card card--5" data-label="THE HIGH PRIESTESS">
+        <div class="card__inner">
+          <div class="card__roman">II</div>
+          <div class="card__art">🔮</div>
+          <div class="card__name">PRIESTESS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero text -->
+    <div class="hero__content">
+      <p class="hero__eyebrow">DISCOVER · GUIDANCE · TRANSFORMATION</p>
+      <h1 class="hero__title">
+        Your journey.<br />
+        <em>Revealed.</em>
+      </h1>
+      <p class="hero__sub">Ancient wisdom. Modern clarity.<br />Personalized tarot readings for every chapter of your life.</p>
+
+      <div class="hero__cta-group">
+        <button class="btn btn--primary" id="openBooking">✦ Đặt Lịch Ngay</button>
+        <a href="feedback.html" class="btn btn--ghost">✧ Cảm Nhận</a>
+      </div>
+
+      <div class="hero__social-proof">
+        <div class="avatars">
+          <img class="avatar" src="https://i.pravatar.cc/40?img=1" alt="user" />
+          <img class="avatar" src="https://i.pravatar.cc/40?img=5" alt="user" />
+          <img class="avatar" src="https://i.pravatar.cc/40?img=9" alt="user" />
+        </div>
+        <div class="proof__text">
+          <span class="stars-gold">★★★★★</span>
+          <span class="proof__label">4.9 — 10K+ Readings Completed</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span class="scroll-indicator__star">✦</span>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services">
+    <div class="services__inner">
+      <p class="section-eyebrow">Dịch Vụ</p>
+      <h2 class="section-title">Chọn hành trình của bạn</h2>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">🌙</div>
+          <h3 class="service-card__title">Trải Bài Tổng Quan</h3>
+          <p class="service-card__desc">Cái nhìn toàn diện về hiện tại, quá khứ và tương lai của bạn qua 10 lá bài.</p>
+          <span class="service-card__duration">60 phút</span>
+        </div>
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Phổ biến nhất</div>
+          <div class="service-card__icon">⭐</div>
+          <h3 class="service-card__title">Trải Bài Tình Yêu</h3>
+          <p class="service-card__desc">Khám phá năng lượng mối quan hệ, kết nối tâm hồn và hướng đi tình duyên.</p>
+          <span class="service-card__duration">45 phút</span>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">☀️</div>
+          <h3 class="service-card__title">Trải Bài Sự Nghiệp</h3>
+          <p class="service-card__desc">Định hướng nghề nghiệp, tài chính và những quyết định quan trọng trong cuộc đời.</p>
+          <span class="service-card__duration">45 phút</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOOKING MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="closeModal" aria-label="Đóng">✕</button>
+      <div class="modal__header">
+        <span class="modal__icon">☽</span>
+        <h2 class="modal__title" id="modalTitle">Đặt Lịch Tarot</h2>
+        <p class="modal__sub">Điền thông tin để chúng tôi chuẩn bị hành trình của bạn</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="name">Họ & Tên</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+          <span class="form-error" id="nameErr"></span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Số Điện Thoại</label>
+          <input class="form-input" type="tel" id="phone" name="phone" placeholder="0901 234 567" required />
+          <span class="form-error" id="phoneErr"></span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="service">Dịch Vụ</label>
+          <select class="form-input form-select" id="service" name="service">
+            <option value="Trải Bài Tổng Quan">Trải Bài Tổng Quan</option>
+            <option value="Trải Bài Tình Yêu" selected>Trải Bài Tình Yêu</option>
+            <option value="Trải Bài Sự Nghiệp">Trải Bài Sự Nghiệp</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="date">Ngày Hẹn</label>
+          <input class="form-input" type="date" id="date" name="date" required />
+          <span class="form-error" id="dateErr"></span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="note">Câu Hỏi / Ghi Chú <span class="optional">(tuỳ chọn)</span></label>
+          <textarea class="form-input form-textarea" id="note" name="note" placeholder="Tôi muốn hỏi về..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+          <span id="submitText">✦ Xác Nhận Đặt Lịch</span>
+          <span id="submitLoading" style="display:none">Đang gửi...</span>
+        </button>
+      </form>
+
+      <!-- Success state -->
+      <div class="booking-success" id="bookingSuccess" style="display:none">
+        <div class="success-icon">✦</div>
+        <h3 class="success-title">Đặt lịch thành công!</h3>
+        <p class="success-msg">Chúng tôi đã nhận được lịch hẹn của bạn và sẽ liên hệ xác nhận trong thời gian sớm nhất. Hẹn gặp bạn!</p>
+        <button class="btn btn--ghost" id="closeSuccess">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__logo">
+        <span class="nav__logo-icon">☽</span>
+        <span>LUNARA</span>
+      </div>
+      <p class="footer__tagline">Ancient wisdom. Modern clarity.</p>
+      <div class="footer__links">
+        <a href="index.html">Trang Chủ</a>
+        <a href="feedback.html">Cảm Nhận</a>
+        <button class="footer__book-link" id="footerBook">Đặt Lịch</button>
+      </div>
+      <p class="footer__copy">© 2026 Lunara. Crafted with ✦ & starlight.</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
