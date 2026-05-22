@@ -1,0 +1,350 @@
+/* ============================================================
+   LUNARA — TAROT BOOKING SITE
+   Feedback Page Stylesheet
+   ============================================================ */
+
+.feedback-page {
+  background: radial-gradient(ellipse at 50% 20%, #1a0f4f 0%, #0d0a2e 50%, #050714 100%);
+}
+
+/* ============ PAGE HEADER ============ */
+.fb-header {
+  padding: 9rem 2rem 4rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  animation: fadeUp 1.2s var(--ease-out-quart) both;
+}
+
+.fb-header__title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.fb-header__title em {
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.fb-header__sub {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ============ STATS BAR ============ */
+.stats-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto 5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 10px 45px rgba(0, 0, 0, 0.2);
+  animation: fadeUp 1.2s var(--ease-out-quart) 0.1s both;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat__number {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1.2;
+}
+
+.stat__label {
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.stat__divider {
+  color: var(--gold-dim);
+  font-size: 0.8rem;
+  animation: pulseStar 3s ease-in-out infinite;
+}
+
+@keyframes pulseStar {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.2); text-shadow: 0 0 8px var(--gold); }
+}
+
+/* ============ TESTIMONIALS GRID ============ */
+.testimonials {
+  position: relative;
+  z-index: 10;
+  padding: 0 2rem 6rem;
+}
+
+.testimonials__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+/* ============ TESTIMONIAL CARDS ============ */
+.tcard {
+  position: relative;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(107, 33, 232, 0.05);
+  transition: all 0.4s var(--ease-out-quart);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+  animation: cardEntrance 0.8s var(--ease-out-quart) both;
+}
+
+@keyframes cardEntrance {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tcard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 168, 76, 0.4);
+  box-shadow: 0 20px 50px rgba(107, 33, 232, 0.2), 0 0 30px rgba(201, 168, 76, 0.1);
+}
+
+.tcard__stars {
+  color: var(--gold);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.tcard__quote {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-bright);
+  position: relative;
+  flex-grow: 1;
+}
+
+.tcard__quote::before {
+  content: "“";
+  position: absolute;
+  top: -1.5rem;
+  left: -1rem;
+  font-size: 4rem;
+  font-family: var(--font-serif);
+  color: var(--gold-dim);
+  opacity: 0.2;
+}
+
+.tcard__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 1.25rem;
+}
+
+.tcard__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--gold-dim);
+  transition: border-color 0.3s;
+}
+
+.tcard:hover .tcard__avatar {
+  border-color: var(--gold);
+}
+
+.tcard__name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  color: var(--gold-light);
+}
+
+.tcard__role {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Card Modifiers */
+.tcard--large {
+  grid-column: span 2;
+}
+
+.tcard--accent {
+  border-color: rgba(107, 33, 232, 0.4);
+  background: linear-gradient(145deg, rgba(107, 33, 232, 0.15) 0%, rgba(13, 10, 46, 0.85) 100%);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35), 0 0 40px rgba(107, 33, 232, 0.15);
+}
+
+.tcard--accent:hover {
+  border-color: rgba(192, 38, 211, 0.5);
+  box-shadow: 0 20px 50px rgba(192, 38, 211, 0.25);
+}
+
+.tcard--accent .tcard__quote::before {
+  color: rgba(107, 33, 232, 0.5);
+}
+
+.tcard--right {
+  border-color: rgba(201, 168, 76, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(201, 168, 76, 0.08);
+}
+
+/* ============ LEAVE FEEDBACK SECTION ============ */
+.leave-feedback {
+  position: relative;
+  z-index: 10;
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, transparent, rgba(13, 10, 46, 0.8) 20%, rgba(13, 10, 46, 0.8) 80%, transparent);
+}
+
+.leave-feedback__inner {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.leave-feedback__sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-top: -2rem;
+  margin-bottom: 3.5rem;
+}
+
+.feedback-form {
+  background: linear-gradient(145deg, #120e36 0%, #0d0a2e 100%);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 3.5rem;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 50px rgba(107, 33, 232, 0.15);
+  text-align: left;
+}
+
+/* Star selection interaction */
+.star-rating {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.star-btn {
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.12);
+  transition: all 0.2s ease;
+  line-height: 1;
+  padding: 4px;
+}
+
+.star-btn:hover,
+.star-btn.hovered {
+  color: var(--gold-light);
+  transform: scale(1.15);
+  text-shadow: 0 0 15px rgba(232, 204, 122, 0.6);
+}
+
+.star-btn.active {
+  color: var(--gold);
+  text-shadow: 0 0 20px rgba(201, 168, 76, 0.8);
+  transform: scale(1.08);
+}
+
+/* ============ CTA BAND ============ */
+.cta-band {
+  position: relative;
+  z-index: 10;
+  padding: 7rem 2rem;
+  text-align: center;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(107, 33, 232, 0.2) 0%, transparent 60%);
+}
+
+.cta-band__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeUp 1.2s var(--ease-out-quart) both;
+}
+
+.cta-band__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.15;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta-band__title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .testimonials__inner {
+    grid-template-columns: 1fr;
+  }
+  .tcard--large {
+    grid-column: span 1;
+  }
+  .stats-bar {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .stat__divider {
+    transform: rotate(90deg);
+  }
+  .feedback-form {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .fb-header {
+    padding: 8rem 1.5rem 3rem;
+  }
+  .leave-feedback {
+    padding: 4rem 1rem;
+  }
+  .cta-band {
+    padding: 5rem 1.5rem;
+  }
+  .star-btn {
+    font-size: 1.8rem;
+  }
+}
